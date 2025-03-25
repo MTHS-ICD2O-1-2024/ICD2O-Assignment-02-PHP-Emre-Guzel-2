@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Recteng" />
+  <meta name="description" content="volume of a right rectangular prism " />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Emre Guzel" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <title>Math Calculator </title>
+  <title> volume of a right rectangular prism </title>
 </head>
 
 <body>
@@ -26,30 +26,45 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area if triangle </span>
+        <span class="mdl-layout-title"></span>
       </div>
     </header>
-    <main class="mdl-layout__content">
-      <div class="right-image">
-      </div>
-      <?php
-      $BaseOfTriangle = $_GET["base-of-triangle"];
-      $HeightOfTriangle = $_GET["height-of-triangle"];
-      $area = ($BaseOfTriangle * $HeightOfTriangle) / 2;
-      echo "If a triangle  has base = " . $BaseOfTriangle . " cm and the height = " . $HeightOfTriangle . " cm:";
-      echo "<br />";
-      echo "<br />";
-      echo "The area of the triangle is " . $area . " cm².";
-      ?>
-      <br /> <br>
-      <div class="page-content-answer">
-        <a href="./index.php">Return ...</a>
-      </div>
+    <div class="container">
+      <h3 class="dimatoins">volume of a right rectangular prism </h3>
       <br>
-      <div class="right-image">
-        <img src="./images/area_of_trinagle.png" alt="Calculation">
-      </div>
-    </main>
+      <form action="answer.php" method="GET">
+        <p>Length of right rectangular prism (cm)</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-of-triangle">
+          <label class="mdl-textfield__label" for="sample2"></label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <br>
+        <p>Width of right rectangular prism (cm)</p>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" name="height-of-triangle">
+          <label class="mdl-textfield__label" for="sample3">Height of triangle (cm)</label>
+        </div>
+        <br>
+        <p>Height of right rectangular prism (cm)</p>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" name="height-of-triangle">
+          <label class="mdl-textfield__label" for="sample3">Height of triangle (cm)</label>
+        </div>
+        <br>
+        <main id="click-me " class="mdl-layout__content">
+          <button id="click" type="submit"
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Calculate
+          </button>
+        </main>
+      </form>
+      <p>Area is: </p>
+
+    </div>
+    <br>
+  </div>
+  <img class="Calculate" src="images/area_of_trinagle.png" alt="Street">
 </body>
 
 </html>
