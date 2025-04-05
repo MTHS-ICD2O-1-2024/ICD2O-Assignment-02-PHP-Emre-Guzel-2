@@ -26,29 +26,30 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title"></span>
+        <span class="mdl-layout-title">Volume of a right rectangular prism </span>
       </div>
     </header>
+    </header>
     <div class="container">
-      <h3 class="dimatoins">volume of a right rectangular prism </h3>
+      <h3 class="dimatoins">Volume of a right rectangular prism </h3>
       <br>
       <form action="answer.php" method="GET">
         <p>Length of right rectangular prism (cm)</p>
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-of-triangle">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="length-of-right-rectangular-prism">
           <label class="mdl-textfield__label" for="sample2"></label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
         <br>
         <p>Width of right rectangular prism (cm)</p>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" name="height-of-triangle">
+          <input class="mdl-textfield__input" type="text" name="width-of-right-rectangular-prism">
           <label class="mdl-textfield__label" for="sample3">Height of triangle (cm)</label>
         </div>
         <br>
         <p>Height of right rectangular prism (cm)</p>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" name="height-of-triangle">
+          <input class="mdl-textfield__input" type="text" name="height-of-right-rectangular-prism">
           <label class="mdl-textfield__label" for="sample3">Height of triangle (cm)</label>
         </div>
         <br>
@@ -64,7 +65,7 @@
     </div>
     <br>
   </div>
-  <img class="Calculate" src="images/area_of_trinagle.png" alt="Street">
+  <img src="./images/volume-of-right-rectectangle.png" alt="Right rectangle">
 </body>
 
 </html>
