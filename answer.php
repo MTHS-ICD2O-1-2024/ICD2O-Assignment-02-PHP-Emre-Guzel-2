@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <title>Math Calculator </title>
+  <title>Volume of a right rectangular prism </title>
 </head>
 
 <body>
@@ -26,20 +26,23 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area if triangle </span>
+        <span class="mdl-layout-title">Volume of a right rectangular prism </span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
       </div>
       <?php
-      $BaseOfTriangle = $_GET["base-of-triangle"];
-      $HeightOfTriangle = $_GET["height-of-triangle"];
-      $area = ($BaseOfTriangle * $HeightOfTriangle) / 2;
-      echo "If a triangle  has base = " . $BaseOfTriangle . " cm and the height = " . $HeightOfTriangle . " cm:";
+
+      $lengthOfRightRectangularPrism = $_GET["length-of-right-rectangular-prism"];
+      $widthOfRightRectangularPrism = $_GET["width-of-right-rectangular-prism"];
+      $heightOfRightRectangularPrism = $_GET["height-of-right-rectangular-prism"];
+      $volume = ($lengthOfRightRectangularPrism * $widthOfRightRectangularPrism * $heightOfRightRectangularPrism);
+      echo "<br>";
+      echo "If a right rectangular prism has lenght = " . $lengthOfRightRectangularPrism . " cm and the width = " . $widthOfRightRectangularPrism . " cm:" . "if the  right rectangular prism has height =" . $heightOfRightRectangularPrism;
       echo "<br />";
       echo "<br />";
-      echo "The area of the triangle is " . $area . " cm².";
+      echo "The area of the triangle is " . $volume . " cm³ .";
       ?>
       <br /> <br>
       <div class="page-content-answer">
@@ -47,7 +50,7 @@
       </div>
       <br>
       <div class="right-image">
-        <img src="./images/area_of_trinagle.png" alt="Calculation">
+        <img src="./images/volume-of-right-rectectangle.png" alt="Right rectangle">
       </div>
     </main>
 </body>
